@@ -7,6 +7,9 @@ export default function App() {
   const [breakLength, setBreakLength] = useState(5);
   const [sessionLength, setSessionLength] = useState(25);
   const [currentStage, setCurrentStage] = useState('session');
+  const [timer, setTimer] = useState(25 * 60);
+
+  /***** FUNCTIONS *****/
 
   return (
     <div>
