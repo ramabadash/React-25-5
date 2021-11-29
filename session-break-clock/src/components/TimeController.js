@@ -4,14 +4,12 @@ export default function TimeController({ name, setTime, currentTime }) {
   /***** FUNCTIONS *****/
 
   const timeDecrement = () => {
-    setTime((prevTime) => {
-      if (prevTime > 0) {
-        return prevTime - 1;
-      }
-    });
+    // Time can only by bigger then 0
+    setTime((prevTime) => (prevTime > 1 ? prevTime - 1 : prevTime));
   };
   const timeIncrement = () => {
-    setTime((prevTime) => prevTime + 1);
+    // Time can only be 60 or smaller
+    setTime((prevTime) => (prevTime < 60 ? prevTime + 1 : prevTime));
   };
 
   return (
