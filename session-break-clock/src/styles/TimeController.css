@@ -1,0 +1,18 @@
+#timeController-container {
+  width: 15%;
+  margin: 0.5em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.increment-span,
+.decrement-span {
+  margin: 0.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.increment-span:hover,
+.decrement-span:hover {
+  color: darkblue;
+}
