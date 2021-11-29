@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/TimeController.css';
 
 export default function TimeController({ name, setTime, currentTime }) {
   /***** FUNCTIONS *****/
@@ -15,13 +16,15 @@ export default function TimeController({ name, setTime, currentTime }) {
   return (
     <div id='timeController-container'>
       <label id={`${name}-label`}>{name} Length:</label>
-      <span id={`${name}-increment`} onClick={timeIncrement}>
-        <i className='fas fa-arrow-circle-up'></i>
-      </span>
-      <span id={`${name}-length`}>{currentTime}</span>
-      <span id={`${name}-decrement`} onClick={timeDecrement}>
-        <i className='fas fa-arrow-circle-down'></i>
-      </span>
+      <div>
+        <span id={`${name}-increment`} className={'increment-span'} onClick={timeIncrement}>
+          <i className='fas fa-arrow-circle-up'></i>
+        </span>
+        <span id={`${name}-length`}>{currentTime}</span>
+        <span id={`${name}-decrement`} className={'decrement-span'} onClick={timeDecrement}>
+          <i className='fas fa-arrow-circle-down'></i>
+        </span>
+      </div>
     </div>
   );
 }

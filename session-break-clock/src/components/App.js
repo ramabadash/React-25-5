@@ -10,6 +10,10 @@ export default function App() {
   const [timer, setTimer] = useState(25 * 60);
 
   /***** FUNCTIONS *****/
+  const reset = () => {
+    setSessionLength(25);
+    setBreakLength(5);
+  };
 
   return (
     <div>
