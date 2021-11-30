@@ -1,8 +1,15 @@
 #timeController-container {
-  width: 15%;
+  /* width: 15%; */
   margin: 0.5em auto;
   display: flex;
   flex-direction: column;
+  font-family: 'Kalam';
+  font-size: 1.25em;
+}
+
+#session-label::first-letter,
+#break-label::first-letter {
+  text-transform: capitalize;
 }
 
 .increment-span,

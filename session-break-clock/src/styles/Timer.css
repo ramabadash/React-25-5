@@ -1,0 +1,42 @@
+.timer-container {
+  margin: 0.5em auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Kalam';
+  font-size: 1.25em;
+}
+.time-labels {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+}
+#timer-label::first-letter {
+  text-transform: capitalize;
+}
+#timer-label {
+  color: firebrick;
+  font-weight: bold;
+}
+
+#time-left {
+  font-size: 1.5em;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 1em;
+  width: 5em;
+  padding: 0.1em;
+  margin-bottom: 0.25em;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+#reset:hover,
+#start_stop:hover {
+  color: darkblue;
+  font-size: 1.2em;
+}
